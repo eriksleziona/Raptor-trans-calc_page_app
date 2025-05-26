@@ -2,8 +2,8 @@ import { styled } from "@linaria/react";
 import type { PropsWithChildren, FC } from "react";
 
 const CSSContainer = styled.div`
-  background-color: white;
-  color: red;
+  max-width: 500px;
+  padding: 15px;
   border-radius: 10px;
 `;
 
