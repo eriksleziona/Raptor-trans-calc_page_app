@@ -1,17 +1,13 @@
-import type { FC, PropsWithChildren } from "react";
+import type { FC } from "react";
 import { AppProvider } from "../../Context/Context";
-import InputElement from "../Global/Components/InputElement/InputElement";
 
-const Home: FC<PropsWithChildren> = ({ children }) => {
+import ExcavationVolumeCalculator from "../Calculators/ExcavationVolumeCalculator/ExcavationVolumeCalculator";
+
+const Home: FC = () => {
   return (
     <>
       <AppProvider>
-        {children}
-        <InputElement
-          input_type="text"
-          label="Test Label"
-          fn_handler={() => console.log("works")}
-        ></InputElement>
+        <ExcavationVolumeCalculator />
       </AppProvider>
     </>
   );

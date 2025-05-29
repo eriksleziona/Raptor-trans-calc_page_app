@@ -2,7 +2,12 @@ import { styled } from "@linaria/react";
 import type { PropsWithChildren, FC } from "react";
 
 const CSSContainer = styled.div`
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px 25px;
+  border: solid #000;
+  border-width: 1px;
   padding: 15px;
   border-radius: 10px;
 `;
